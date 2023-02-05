@@ -1,0 +1,279 @@
+*{
+  margin: 0px;
+  padding:0px;
+  box-sizing: border-box; 
+  /* border: 1px solid red; */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(209, 239, 240); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(130, 186, 188); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(87, 147, 149); 
+}
+
+.ParentContainer-of-details-and-familytree{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100vh;
+  background-color: cadetblue;
+}
+
+.Family-Details-section{
+  display: flex;
+  flex-direction: column;
+  width: 63%;
+  height: 95%;
+  border: 2px solid cadetblue;
+  border-radius: 20px;
+  background-color: aliceblue;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+   rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.Family-Details-Heading{
+  text-align: center;
+  font-weight: bolder;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+.Family-Details-Body-Container{
+  width: 100%;
+  height: 92%;
+  border-top: 2px solid cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Details-of-family{
+  width: 75%;
+  margin: auto;
+  height: 90%;
+ border: 2px solid cadetblue;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.Labels-container{
+  width: 30%;
+  height: 100%;
+  margin-right: 15px;
+  /* border: 2px solid cadetblue; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.Labels-container>p{
+  font-size: larger;
+  display: inline;
+}
+
+
+.Family-info-container{
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid cadetblue; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.Family-info-container>p{
+  font-size: larger;
+  display: inline;
+}
+
+.Photo-container{
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 15px;
+  width: 100%;
+  height: 30%;
+
+}
+
+
+
+.Image1{
+  width: 40%;
+  border: 2px solid cadetblue;
+  border-style: dashed;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: beige;
+}
+
+.Image2{
+  width: 40%;
+  border: 2px solid cadetblue;
+  border-style: dashed;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: beige;
+}
+
+
+
+.Family-Tree-Container{
+  width: 34%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 2px solid cadetblue;
+  background-color: rgb(255, 255, 255);
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+   rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.Family-tree-files-and-folder{
+  width: 100%;
+  height: 70%;
+  /* border-bottom: 2px solid cadetblue; */
+  overflow-y: scroll;
+  border-top: 2px solid cadetblue;
+}
+
+.Button-container-Parent{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  flex-direction: column;
+  border-top: 2px solid cadetblue;
+}
+
+.Import-json-and-add-family-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 35%;
+}
+
+.Export-json-and-add-print-family-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 35%;
+  
+}
+
+.Action-button{
+  width: 45%;
+  border:none ;
+  height: 100%;
+  color: green;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.Action-button:hover{
+  background-color: rgb(215, 249, 238);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+
+
+
+@media only screen and (max-width: 720px) {
+  .ParentContainer-of-details-and-familytree{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+  }
+  .Family-Details-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 50%;
+    border: 2px solid cadetblue;
+    border-radius: 20px;
+    margin-top: 5px;
+  }
+
+  .Family-Tree-Container{
+    width: 100%;
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 2px solid cadetblue;
+  }
+
+  .Details-of-family{
+    width: 98%;
+    margin: auto;
+    height: 98%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+
+
+  .Labels-container{
+    width: max-content;
+    height: 100%;
+    margin-right: 15px;
+    /* border: 2px solid cadetblue; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .Labels-container>p{
+    font-size: larger;
+    display: inline;
+  }
+  .Family-info-container>p{
+    font-size: larger;
+    display: inline;
+  }
+
+  .Photo-container{
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 15px;
+    width: 100%;
+    height: 250px;
+  
+  }
+
+}
